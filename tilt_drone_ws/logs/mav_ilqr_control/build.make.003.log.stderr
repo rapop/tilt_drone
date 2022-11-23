@@ -1,0 +1,111 @@
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:[m[K In constructor ‘[01m[KIterativeLinearQuadraticRegulatorNode::IterativeLinearQuadraticRegulatorNode(const ros::NodeHandle&, ros::NodeHandle, double, int)[m[K’:
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:45:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kentered_pos_limit_[m[K’ was not declared in this scope
+   entered_pos_limit_ = false;
+[01;32m[K   ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:[m[K In member function ‘[01m[Kvoid IterativeLinearQuadraticRegulatorNode::commandRollPitchYawrateThrust(const ros::Time&)[m[K’:
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:265:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kvx_limit_[m[K’ was not declared in this scope
+   if (((fabs(dx_) > vx_limit_)  || (fabs(dy_) > vy_limit_) || (fabs(dz_) > vz_limit_)) && speed_limit_on_) {
+[01;32m[K                     ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:265:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kvy_limit_[m[K’ was not declared in this scope
+   if (((fabs(dx_) > vx_limit_)  || (fabs(dy_) > vy_limit_) || (fabs(dz_) > vz_limit_)) && speed_limit_on_) {
+[01;32m[K                                                 ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:265:76:[m[K [01;31m[Kerror: [m[K‘[01m[Kvz_limit_[m[K’ was not declared in this scope
+   if (((fabs(dx_) > vx_limit_)  || (fabs(dy_) > vy_limit_) || (fabs(dz_) > vz_limit_)) && speed_limit_on_) {
+[01;32m[K                                                                            ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:265:91:[m[K [01;31m[Kerror: [m[K‘[01m[Kspeed_limit_on_[m[K’ was not declared in this scope
+   if (((fabs(dx_) > vx_limit_)  || (fabs(dy_) > vy_limit_) || (fabs(dz_) > vz_limit_)) && speed_limit_on_) {
+[01;32m[K                                                                                           ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:361:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kx_limit_inf_[m[K’ was not declared in this scope
+   if (x_limit_inf_ > x_ || x_ > x_limit_sup_  || y_limit_inf_ > y_ || y_ > y_limit_sup_ || z_limit_inf_ > z_ || z_ > z_limit_sup_
+[01;32m[K       ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:361:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kx_limit_sup_[m[K’ was not declared in this scope
+   if (x_limit_inf_ > x_ || x_ > x_limit_sup_  || y_limit_inf_ > y_ || y_ > y_limit_sup_ || z_limit_inf_ > z_ || z_ > z_limit_sup_
+[01;32m[K                                 ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:361:50:[m[K [01;31m[Kerror: [m[K‘[01m[Ky_limit_inf_[m[K’ was not declared in this scope
+   if (x_limit_inf_ > x_ || x_ > x_limit_sup_  || y_limit_inf_ > y_ || y_ > y_limit_sup_ || z_limit_inf_ > z_ || z_ > z_limit_sup_
+[01;32m[K                                                  ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:361:76:[m[K [01;31m[Kerror: [m[K‘[01m[Ky_limit_sup_[m[K’ was not declared in this scope
+   if (x_limit_inf_ > x_ || x_ > x_limit_sup_  || y_limit_inf_ > y_ || y_ > y_limit_sup_ || z_limit_inf_ > z_ || z_ > z_limit_sup_
+[01;32m[K                                                                            ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:361:92:[m[K [01;31m[Kerror: [m[K‘[01m[Kz_limit_inf_[m[K’ was not declared in this scope
+   if (x_limit_inf_ > x_ || x_ > x_limit_sup_  || y_limit_inf_ > y_ || y_ > y_limit_sup_ || z_limit_inf_ > z_ || z_ > z_limit_sup_
+[01;32m[K                                                                                            ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:361:118:[m[K [01;31m[Kerror: [m[K‘[01m[Kz_limit_sup_[m[K’ was not declared in this scope
+   if (x_limit_inf_ > x_ || x_ > x_limit_sup_  || y_limit_inf_ > y_ || y_ > y_limit_sup_ || z_limit_inf_ > z_ || z_ > z_limit_sup_
+[01;32m[K                                                                                                                      ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:362:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kposition_limit_on_[m[K’ was not declared in this scope
+       && position_limit_on_ || entered_pos_limit_) {
+[01;32m[K          ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:362:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kentered_pos_limit_[m[K’ was not declared in this scope
+       && position_limit_on_ || entered_pos_limit_) {
+[01;32m[K                                ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:[m[K In member function ‘[01m[Kvoid IterativeLinearQuadraticRegulatorNode::DynConfigCallback(mav_ilqr_control::iLQRControllerConfig&, uint32_t)[m[K’:
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:445:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kspeed_limit_on_[m[K’ was not declared in this scope
+   speed_limit_on_ = config.speed_limit_on;
+[01;32m[K   ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:445:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass mav_ilqr_control::iLQRControllerConfig[m[K’ has no member named ‘[01m[Kspeed_limit_on[m[K’
+   speed_limit_on_ = config.speed_limit_on;
+[01;32m[K                            ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:446:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kvx_limit_[m[K’ was not declared in this scope
+   vx_limit_ = config.vx_limit;
+[01;32m[K   ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:446:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass mav_ilqr_control::iLQRControllerConfig[m[K’ has no member named ‘[01m[Kvx_limit[m[K’
+   vx_limit_ = config.vx_limit;
+[01;32m[K                      ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:447:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kvy_limit_[m[K’ was not declared in this scope
+   vy_limit_ = config.vy_limit;
+[01;32m[K   ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:447:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass mav_ilqr_control::iLQRControllerConfig[m[K’ has no member named ‘[01m[Kvy_limit[m[K’
+   vy_limit_ = config.vy_limit;
+[01;32m[K                      ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:448:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kvz_limit_[m[K’ was not declared in this scope
+   vz_limit_ = config.vz_limit;
+[01;32m[K   ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:448:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass mav_ilqr_control::iLQRControllerConfig[m[K’ has no member named ‘[01m[Kvz_limit[m[K’
+   vz_limit_ = config.vz_limit;
+[01;32m[K                      ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:450:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kposition_limit_on_[m[K’ was not declared in this scope
+   position_limit_on_ = config.position_limit_on;
+[01;32m[K   ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:450:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass mav_ilqr_control::iLQRControllerConfig[m[K’ has no member named ‘[01m[Kposition_limit_on[m[K’
+   position_limit_on_ = config.position_limit_on;
+[01;32m[K                               ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:451:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kx_limit_inf_[m[K’ was not declared in this scope
+   x_limit_inf_ = config.x_limit_inf;
+[01;32m[K   ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:451:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass mav_ilqr_control::iLQRControllerConfig[m[K’ has no member named ‘[01m[Kx_limit_inf[m[K’
+   x_limit_inf_ = config.x_limit_inf;
+[01;32m[K                         ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:452:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kx_limit_sup_[m[K’ was not declared in this scope
+   x_limit_sup_ = config.x_limit_sup;
+[01;32m[K   ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:452:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass mav_ilqr_control::iLQRControllerConfig[m[K’ has no member named ‘[01m[Kx_limit_sup[m[K’
+   x_limit_sup_ = config.x_limit_sup;
+[01;32m[K                         ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:453:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ky_limit_inf_[m[K’ was not declared in this scope
+   y_limit_inf_ = config.y_limit_inf;
+[01;32m[K   ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:453:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass mav_ilqr_control::iLQRControllerConfig[m[K’ has no member named ‘[01m[Ky_limit_inf[m[K’
+   y_limit_inf_ = config.y_limit_inf;
+[01;32m[K                         ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:454:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ky_limit_sup_[m[K’ was not declared in this scope
+   y_limit_sup_ = config.y_limit_sup;
+[01;32m[K   ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:454:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass mav_ilqr_control::iLQRControllerConfig[m[K’ has no member named ‘[01m[Ky_limit_sup[m[K’
+   y_limit_sup_ = config.y_limit_sup;
+[01;32m[K                         ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:455:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kz_limit_inf_[m[K’ was not declared in this scope
+   z_limit_inf_ = config.z_limit_inf;
+[01;32m[K   ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:455:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass mav_ilqr_control::iLQRControllerConfig[m[K’ has no member named ‘[01m[Kz_limit_inf[m[K’
+   z_limit_inf_ = config.z_limit_inf;
+[01;32m[K                         ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:456:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kz_limit_sup_[m[K’ was not declared in this scope
+   z_limit_sup_ = config.z_limit_sup;
+[01;32m[K   ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:456:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass mav_ilqr_control::iLQRControllerConfig[m[K’ has no member named ‘[01m[Kz_limit_sup[m[K’
+   z_limit_sup_ = config.z_limit_sup;
+[01;32m[K                         ^[m[K
+make[2]: *** [CMakeFiles/ilqr_control_node.dir/src/ilqr_control_node.cc.o] Error 1
+make[1]: *** [CMakeFiles/ilqr_control_node.dir/all] Error 2
+make: *** [all] Error 2

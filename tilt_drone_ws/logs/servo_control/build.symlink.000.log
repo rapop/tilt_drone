@@ -1,0 +1,4 @@
+Symlinking /home/radu/tiltUp3_ws/devel/lib/pkgconfig/servo_control.pc
+Symlinking /home/radu/tiltUp3_ws/devel/lib/servo_control/servo_control_node
+Symlinking /home/radu/tiltUp3_ws/devel/share/servo_control/cmake/servo_controlConfig-version.cmake
+Symlinking /home/radu/tiltUp3_ws/devel/share/servo_control/cmake/servo_controlConfig.cmake

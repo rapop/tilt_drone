@@ -1,0 +1,5 @@
+catkin_generated/env_cached.sh: 16: exec: /home/radu/tiltUp3_ws/src/mav_ilqr_control/cfg/iLQRController.cfg: Permission denied
+make[2]: *** [/home/radu/tiltUp3_ws/devel/.private/mav_ilqr_control/include/mav_ilqr_control/iLQRControllerConfig.h] Error 126
+make[1]: *** [CMakeFiles/mav_ilqr_control_gencfg.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [all] Error 2

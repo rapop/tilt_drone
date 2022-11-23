@@ -1,0 +1,8 @@
+prefix=/home/radu/tiltUp3_ws/devel/.private/mav_ilqr_control
+
+Name: mav_ilqr_control
+Description: Description of mav_ilqr_control
+Version: 0.0.0
+Cflags: -I/home/radu/tiltUp3_ws/devel/.private/mav_ilqr_control/include -I/home/radu/tiltUp3_ws/src/mav_ilqr_control/include
+Libs: -L/home/radu/tiltUp3_ws/devel/.private/mav_ilqr_control/lib 
+Requires: 

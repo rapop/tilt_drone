@@ -1,0 +1,1 @@
+cmd='cd;../glog_src/;&&;autoreconf;-fi;&&;./configure;--with-pic;--with-gflags=/home/radu/tiltUp3_ws/devel/.private/gflags_catkin;--prefix=/home/radu/tiltUp3_ws/devel/.private/glog_catkin'

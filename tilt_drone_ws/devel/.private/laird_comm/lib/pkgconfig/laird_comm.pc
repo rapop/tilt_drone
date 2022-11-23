@@ -1,0 +1,8 @@
+prefix=/home/radu/tiltUp3_ws/devel/.private/laird_comm
+
+Name: laird_comm
+Description: Description of laird_comm
+Version: 0.0.0
+Cflags: -I/home/radu/tiltUp3_ws/src/laird_comm/include
+Libs: -L/home/radu/tiltUp3_ws/devel/.private/laird_comm/lib 
+Requires: 

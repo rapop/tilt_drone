@@ -1,0 +1,8 @@
+mavros/mavros_extras
+/home/radu/tiltUp3_ws/devel/.private/mavros_extras/cmake.lock /home/radu/tiltUp3_ws/devel/./cmake.lock
+/home/radu/tiltUp3_ws/devel/.private/mavros_extras/lib/libmavros_extras.so /home/radu/tiltUp3_ws/devel/lib/libmavros_extras.so
+/home/radu/tiltUp3_ws/devel/.private/mavros_extras/lib/mavros_extras/copter_visualization /home/radu/tiltUp3_ws/devel/lib/mavros_extras/copter_visualization
+/home/radu/tiltUp3_ws/devel/.private/mavros_extras/lib/mavros_extras/servo_state_publisher /home/radu/tiltUp3_ws/devel/lib/mavros_extras/servo_state_publisher
+/home/radu/tiltUp3_ws/devel/.private/mavros_extras/lib/pkgconfig/mavros_extras.pc /home/radu/tiltUp3_ws/devel/lib/pkgconfig/mavros_extras.pc
+/home/radu/tiltUp3_ws/devel/.private/mavros_extras/share/mavros_extras/cmake/mavros_extrasConfig-version.cmake /home/radu/tiltUp3_ws/devel/share/mavros_extras/cmake/mavros_extrasConfig-version.cmake
+/home/radu/tiltUp3_ws/devel/.private/mavros_extras/share/mavros_extras/cmake/mavros_extrasConfig.cmake /home/radu/tiltUp3_ws/devel/share/mavros_extras/cmake/mavros_extrasConfig.cmake

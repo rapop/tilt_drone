@@ -1,0 +1,26 @@
+#!/bin/bash
+
+if [ -n "$1" ]
+then
+T=$1
+else
+T=5
+fi
+
+echo " ### plotting position x y z [m] ###"
+echo " ### plotting velocities x y z [m/s] ###"
+echo " ### plotting acceleration bias x y z [m/s^2] ###"
+echo " ### plotting scale ###"
+echo " ### buffer = " $T "sec"
+
+#Position verification
+#rqt_plot msf_core/state_out/data[0] /hummingbird/odometry_sensor1/transform/transform/translation/x  msf_core/pose/pose/pose/position/x # posx
+
+#Speed verification
+rqt_plot msf_core/state_out/data[3] /hummingbird/ground_truth/odometry/twist/twist/linear/x  msf_core/odometry/twist/twist/linear/x # vx
+
+#rqt_plot vicon/auk/auk/transform/translation/x # x
+#rqt_plot msf_core/state_out/data[0]:data[1]:data[2] msf_core/state_out/data[3]:data[4]:data[5]  
+#rqt_plot msf_core/state_out/data[13]:data[14]:data[15] msf_core/state_out/data[16]  
+
+

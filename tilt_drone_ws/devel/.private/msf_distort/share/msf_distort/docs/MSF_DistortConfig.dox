@@ -1,0 +1,7 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~publish_pose" : \b [bool] enable pose republishing min: False, default: True, max: True
+- \b "~publish_position" : \b [bool] enable position republishing min: False, default: True, max: True
+

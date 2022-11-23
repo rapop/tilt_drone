@@ -1,0 +1,8 @@
+prefix=/home/radu/tiltUp3_ws/devel/.private/gimbal_control
+
+Name: gimbal_control
+Description: Description of gimbal_control
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/radu/tiltUp3_ws/devel/.private/gimbal_control/lib 
+Requires: 

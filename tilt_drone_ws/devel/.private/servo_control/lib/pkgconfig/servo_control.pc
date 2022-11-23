@@ -1,0 +1,8 @@
+prefix=/home/radu/tiltUp3_ws/devel/.private/servo_control
+
+Name: servo_control
+Description: Description of servo_control
+Version: 0.0.0
+Cflags: -I/home/radu/tiltUp3_ws/src/servo_control/include
+Libs: -L/home/radu/tiltUp3_ws/devel/.private/servo_control/lib 
+Requires: 

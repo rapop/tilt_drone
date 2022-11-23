@@ -1,0 +1,9 @@
+[35m[1mScanning dependencies of target msf_distort_gencfg[0m
+[ 33%] [34m[1mGenerating dynamic reconfigure files from cfg/MSF_Distort.cfg: /home/radu/tiltUp3_ws/devel/.private/msf_distort/include/msf_distort/MSF_DistortConfig.h /home/radu/tiltUp3_ws/devel/.private/msf_distort/lib/python2.7/dist-packages/msf_distort/cfg/MSF_DistortConfig.py[0m
+Generating reconfiguration files for MSF_Distort in msf_distort
+Wrote header file in /home/radu/tiltUp3_ws/devel/.private/msf_distort/include/msf_distort/MSF_DistortConfig.h
+[ 33%] Built target msf_distort_gencfg
+[35m[1mScanning dependencies of target msf_distort[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/msf_distort.dir/src/msf_distort.cc.o[0m
+[100%] [32m[1mLinking CXX executable /home/radu/tiltUp3_ws/devel/.private/msf_distort/lib/msf_distort/msf_distort[0m
+[100%] Built target msf_distort

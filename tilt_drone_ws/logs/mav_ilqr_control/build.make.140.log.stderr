@@ -1,0 +1,7 @@
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:[m[K In constructor ‘[01m[KIterativeLinearQuadraticRegulatorNode::IterativeLinearQuadraticRegulatorNode(const ros::NodeHandle&, ros::NodeHandle, double, int)[m[K’:
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control_node.cc:22:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrajpoint_pub_[m[K’ was not declared in this scope
+   trajpoint_pub_ = nh_.advertise<trajectory_msgs::MultiDOFJointTrajectoryPoint>("mav_ilqr_control/trajectory_desired", 1);
+[01;32m[K   ^[m[K
+make[2]: *** [CMakeFiles/ilqr_control_node.dir/src/ilqr_control_node.cc.o] Error 1
+make[1]: *** [CMakeFiles/ilqr_control_node.dir/all] Error 2
+make: *** [all] Error 2

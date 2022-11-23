@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="quad_name" default="hummingbird"/>
+
+  <arg name="mav_name" default="$(arg quad_name)"/>
+
+  <!-- Mavros !-->
+  <include file="$(find mavros)/launch/apm2.launch"> </include>
+
+  <!-- Servo !-->
+  <include file="$(find servo_control)/launch/servo_control.launch"> </include>
+
+  <!-- Servo Gimbal!-->
+  <node pkg="servo_gimbal_control" type="servo_gimbal_control_node" name="servo_gimbal_control_node" output="screen" >
+     <remap from="ground_truth/odometry" to="/laird/dataReceived_odo" />
+  </node>
+  
+  <group ns="$(arg quad_name)" >
+
+    <!--node pkg="odom_predictor" name="odom_predictor" type="odom_predictor_node" output="screen" > 
+      <remap from="imu_bias" to="/mavros/imu/data_raw" />
+      <remap from="odometry" to="/laird/dataReceived_odo" />
+      <rosparam file="$(find odom_predictor)/launch/bluebird.yaml"/>
+    </node-->
+
+    <!-- iLQR control node !-->
+    <node pkg="mav_ilqr_control" name="mav_ilqr_control" type="ilqr_control_node" output="screen" > 
+      <remap from="ground_truth/odometry" to="/laird/dataReceived_odo" />
+      <remap from="ground_truth/odometry_ang" to="/msf_core/odometry" />
+      <!--remap from="ground_truth/odometry" to="odom_predictor/predicted_odometry" /-->
+      <!--remap from="ground_truth/imu" to="/mavros/imu/data_raw" /-->
+      <remap from="command/roll_pitch_yawrate_thrust" to="/mavros/setpoint_raw/roll_pitch_yawrate_thrust" />
+    </node>
+    
+    <!-- Laird !-->
+    <!--include file="$(find laird_comm)/launch/receiver.launch"> </include-->
+
+  </group>
+ 
+  <!-- MSF nodes !-->
+  <node name="msf_viconpos_sensor" pkg="msf_updates" type="pose_sensor" clear_params="true" output="screen" >
+		<remap from="msf_core/hl_state_input" to="/fcu/ekf_state_out" />
+		<remap from="msf_core/correction" to="/fcu/ekf_state_in" />
+		<remap from="msf_updates/transform_input" to="/vicon/robot_name/robot_name" />
+		<remap from="msf_core/imu_state_input" to="/mavros/imu/data_raw"  />
+		<remap from="msf_updates/transform_input" to="/laird/dataReceived" />
+		<rosparam file="$(find msf_updates)/viconpos_sensor_fix.yaml"/>
+  </node>
+  <node pkg="rosservice" type="rosservice" name="initialize" args="call --wait /msf_viconpos_sensor/pose_sensor/initialize_msf_scale 1"/>
+
+  <!-- Gimbal control node !-->
+  <!--node pkg="gimbal_command" name="gimbal_command_node" type="gimbal_command.py" output="screen"> </node>
+  <include file="$(find gimbal_control)/launch/gimbal_control.launch"> </include-->
+
+</launch>

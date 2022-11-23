@@ -1,0 +1,13 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~core_init_filter" : \b [bool] Call filter init min: False, default: False, max: True
+- \b "~angle_noise_meas" : \b [double] Noise for angle measurement sensor (std. dev). min: 0.0, default: 0.01, max: 10.0
+- \b "~distance_noise_meas" : \b [double] Noise for distance measurement sensor (std. dev). min: 0.0, default: 0.01, max: 10.0
+- \b "~yaw_init" : \b [double] Initial value of yaw. min: -180.0, default: 0.0, max: 180.0
+- \b "~angle_delay" : \b [double] Fix delay for angle measurement in seconds. min: -2.0, default: 0.02, max: 2.0
+- \b "~distance_delay" : \b [double] Fix delay for distance measurement in seconds. min: -2.0, default: 0.02, max: 2.0
+- \b "~noise_p_ip" : \b [double] Propagation: noise p_ip (std. dev). min: 0.0, default: 0.0, max: 10.0
+- \b "~fixed_p_ip" : \b [bool] Fix calibration state position. min: False, default: False, max: True
+

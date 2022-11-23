@@ -1,0 +1,14 @@
+[01m[K/home/radu/tiltUp3_ws/src/laird_comm/src/receiver_node.cc:[m[K In constructor ‘[01m[KLairdCommunicationReceiverNode::LairdCommunicationReceiverNode(const ros::NodeHandle&)[m[K’:
+[01m[K/home/radu/tiltUp3_ws/src/laird_comm/src/receiver_node.cc:18:65:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kint system(const char*)[m[K’, declared with attribute warn_unused_result [-Wunused-result]
+   system("echo 'pop123123' | sudo -S stty -F /dev/ttyUSB0 9600");
+[01;32m[K                                                                 ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/laird_comm/src/receiver_node.cc:19:47:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kint system(const char*)[m[K’, declared with attribute warn_unused_result [-Wunused-result]
+   system("setserial /dev/ttyUSB0 low_latency");
+[01;32m[K                                               ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/laird_comm/src/sender_node.cc:[m[K In constructor ‘[01m[KLairdCommunicationSenderNode::LairdCommunicationSenderNode(const ros::NodeHandle&)[m[K’:
+[01m[K/home/radu/tiltUp3_ws/src/laird_comm/src/sender_node.cc:25:67:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kint system(const char*)[m[K’, declared with attribute warn_unused_result [-Wunused-result]
+   system("echo 'pop123123' | sudo -S stty -F /dev/ttyUSB0 115200");
+[01;32m[K                                                                   ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/laird_comm/src/sender_node.cc:26:47:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kint system(const char*)[m[K’, declared with attribute warn_unused_result [-Wunused-result]
+   system("setserial /dev/ttyUSB0 low_latency");
+[01;32m[K                                               ^[m[K

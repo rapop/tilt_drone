@@ -1,0 +1,29 @@
+hummingbird:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: "joint_state_controller/JointStateController"
+    publish_rate: 100
+
+  # Position Controllers ---------------------------------------
+  gimbal_r_joint_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: gimbal_r_joint
+  # Position Controllers ---------------------------------------
+  gimbal_p_joint_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: gimbal_p_joint
+  # Position Controllers ---------------------------------------
+  gimbal_y_joint_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: gimbal_y_joint
+
+  # Tilts
+  # Position Controllers ---------------------------------------
+  front_axle_joint_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: front_axle_joint
+  # Position Controllers ---------------------------------------
+  back_axle_joint_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: back_axle_joint
+
