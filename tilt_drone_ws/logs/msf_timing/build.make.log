@@ -1,4 +1,0 @@
-[35m[1mScanning dependencies of target msf_timing[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/msf_timing.dir/src/Timer.cc.o[0m
-[100%] [32m[1mLinking CXX shared library /home/radu/tiltUp3_ws/devel/.private/msf_timing/lib/libmsf_timing.so[0m
-[100%] Built target msf_timing

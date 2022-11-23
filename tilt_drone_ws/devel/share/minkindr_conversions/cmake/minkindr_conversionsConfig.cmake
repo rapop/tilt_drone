@@ -1,1 +1,0 @@
-/home/radu/tiltUp3_ws/devel/.private/minkindr_conversions/share/minkindr_conversions/cmake/minkindr_conversionsConfig.cmake

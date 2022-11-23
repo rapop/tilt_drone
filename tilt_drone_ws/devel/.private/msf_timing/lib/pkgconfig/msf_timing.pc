@@ -1,8 +1,0 @@
-prefix=/home/radu/tiltUp3_ws/devel/.private/msf_timing
-
-Name: msf_timing
-Description: Description of msf_timing
-Version: 1.0.1
-Cflags: -I/home/radu/tiltUp3_ws/src/ethzasl_msf/msf_timing/include
-Libs: -L/home/radu/tiltUp3_ws/devel/.private/msf_timing/lib -lmsf_timing
-Requires: 

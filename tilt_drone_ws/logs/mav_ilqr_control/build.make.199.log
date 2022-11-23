@@ -1,7 +1,0 @@
-[ 28%] Built target traj_gen_lb
-[ 42%] Built target mav_ilqr_control_gencfg
-[ 71%] Built target ilqr_control_lb
-[35m[1mScanning dependencies of target ilqr_control_node[0m
-[ 85%] [32mBuilding CXX object CMakeFiles/ilqr_control_node.dir/src/ilqr_control_node.cc.o[0m
-[100%] [32m[1mLinking CXX executable /home/radu/tiltUp3_ws/devel/.private/mav_ilqr_control/lib/mav_ilqr_control/ilqr_control_node[0m
-[100%] Built target ilqr_control_node

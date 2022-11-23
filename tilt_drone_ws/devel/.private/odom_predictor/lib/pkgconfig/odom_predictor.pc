@@ -1,8 +1,0 @@
-prefix=/home/radu/tiltUp3_ws/devel/.private/odom_predictor
-
-Name: odom_predictor
-Description: Description of odom_predictor
-Version: 0.0.0
-Cflags: -I/home/radu/tiltUp3_ws/src/odom_predictor/include
-Libs: -L/home/radu/tiltUp3_ws/devel/.private/odom_predictor/lib -lodom_predictor
-Requires: roscpp roslib nav_msgs sensor_msgs geometry_msgs minkindr minkindr_conversions eigen_catkin

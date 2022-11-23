@@ -1,1 +1,0 @@
-/home/radu/tiltUp3_ws/devel/.private/mav_ilqr_control/include/mav_ilqr_control/iLQRControllerConfig.h

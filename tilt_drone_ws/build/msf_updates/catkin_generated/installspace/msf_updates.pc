@@ -1,8 +1,0 @@
-prefix=/home/radu/tiltUp3_ws/install
-
-Name: msf_updates
-Description: Description of msf_updates
-Version: 1.0.1
-Cflags: -I/home/radu/tiltUp3_ws/install/include -I/home/radu/tiltUp3_ws/devel/.private/msf_core/include -I/home/radu/tiltUp3_ws/devel/.private/glog_catkin/include -I/home/radu/tiltUp3_ws/devel/.private/gflags_catkin/include -I/home/radu/tiltUp3_ws/devel/.private/sensor_fusion_comm/include -I/home/radu/tiltUp3_ws/src/ethzasl_msf/msf_timing/include -I/home/radu/tiltUp3_ws/src/ethzasl_msf/msf_core/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include -I/usr/include/eigen3
-Libs: -L/home/radu/tiltUp3_ws/install/lib -lpose_distorter
-Requires: roscpp msf_core geometry_msgs sensor_fusion_comm

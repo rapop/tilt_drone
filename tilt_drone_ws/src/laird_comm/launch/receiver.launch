@@ -1,8 +1,0 @@
-<launch>
-	<node pkg="laird_comm" type="receiver_node" name="laird_receiver_node" output="screen" >
-	</node>
-
-	<group ns="laird">
-		<rosparam file="$(find laird_comm)/config/params.yaml" />
- 	</group>
-</launch>

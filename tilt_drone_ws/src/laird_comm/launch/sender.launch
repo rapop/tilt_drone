@@ -1,6 +1,0 @@
-<launch>
-
-	<node pkg="laird_comm" type="sender_node" name="laird_sender_node" output="screen" >
-	</node>
-
-</launch>

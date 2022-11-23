@@ -1,8 +1,0 @@
-prefix=/home/radu/tiltUp3_ws/devel/.private/gimbal_command
-
-Name: gimbal_command
-Description: Description of gimbal_command
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/radu/tiltUp3_ws/devel/.private/gimbal_command/lib 
-Requires: 

@@ -1,6 +1,0 @@
-<launch>
-
-	<node pkg="servo_gimbal_control" type="servo_gimbal_control_node" name="servo_gimbal_control_node" output="screen" >
-	</node>
-
-</launch>

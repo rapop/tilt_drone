@@ -1,8 +1,0 @@
-prefix=/home/radu/tiltUp3_ws/devel/.private/sensor_fusion_comm
-
-Name: sensor_fusion_comm
-Description: Description of sensor_fusion_comm
-Version: 1.0.1
-Cflags: -I/home/radu/tiltUp3_ws/devel/.private/sensor_fusion_comm/include
-Libs: -L/home/radu/tiltUp3_ws/devel/.private/sensor_fusion_comm/lib 
-Requires: message_runtime geometry_msgs

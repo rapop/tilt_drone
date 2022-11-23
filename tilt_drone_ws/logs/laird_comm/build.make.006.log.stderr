@@ -1,7 +1,0 @@
-[01m[K/home/radu/tiltUp3_ws/src/laird_comm/src/receiver_node.cc:[m[K In constructor ‘[01m[KLairdCommunicationReceiverNode::LairdCommunicationReceiverNode(const ros::NodeHandle&)[m[K’:
-[01m[K/home/radu/tiltUp3_ws/src/laird_comm/src/receiver_node.cc:18:65:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kint system(const char*)[m[K’, declared with attribute warn_unused_result [-Wunused-result]
-   system("echo 'pop123123' | sudo -S stty -F /dev/ttyS4 115200");
-[01;32m[K                                                                 ^[m[K
-[01m[K/home/radu/tiltUp3_ws/src/laird_comm/src/receiver_node.cc:19:45:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kint system(const char*)[m[K’, declared with attribute warn_unused_result [-Wunused-result]
-   system("setserial /dev/ttyS4 low_latency");
-[01;32m[K                                             ^[m[K

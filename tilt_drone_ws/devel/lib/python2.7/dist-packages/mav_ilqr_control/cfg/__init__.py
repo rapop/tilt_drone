@@ -1,1 +1,0 @@
-/home/radu/tiltUp3_ws/devel/.private/mav_ilqr_control/lib/python2.7/dist-packages/mav_ilqr_control/cfg/__init__.py

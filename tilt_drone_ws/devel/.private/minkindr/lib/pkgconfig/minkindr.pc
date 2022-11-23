@@ -1,8 +1,0 @@
-prefix=/home/radu/tiltUp3_ws/devel/.private/minkindr
-
-Name: minkindr
-Description: Description of minkindr
-Version: 1.0.0
-Cflags: -I/home/radu/tiltUp3_ws/src/minkindr/minkindr/include
-Libs: -L/home/radu/tiltUp3_ws/devel/.private/minkindr/lib 
-Requires: 

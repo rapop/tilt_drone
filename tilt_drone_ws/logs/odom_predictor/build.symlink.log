@@ -1,5 +1,0 @@
-Symlinking /home/radu/tiltUp3_ws/devel/lib/libodom_predictor.so
-Symlinking /home/radu/tiltUp3_ws/devel/lib/odom_predictor/odom_predictor_node
-Symlinking /home/radu/tiltUp3_ws/devel/lib/pkgconfig/odom_predictor.pc
-Symlinking /home/radu/tiltUp3_ws/devel/share/odom_predictor/cmake/odom_predictorConfig.cmake
-Symlinking /home/radu/tiltUp3_ws/devel/share/odom_predictor/cmake/odom_predictorConfig-version.cmake

@@ -1,8 +1,0 @@
-prefix=/home/radu/tiltUp3_ws/devel/.private/eigen_checks
-
-Name: eigen_checks
-Description: Description of eigen_checks
-Version: 0.0.1
-Cflags: -I/home/radu/tiltUp3_ws/src/eigen_checks/include
-Libs: -L/home/radu/tiltUp3_ws/devel/.private/eigen_checks/lib -leigen_checks
-Requires: 

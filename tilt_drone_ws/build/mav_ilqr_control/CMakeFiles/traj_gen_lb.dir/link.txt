@@ -1,1 +1,0 @@
-/usr/bin/c++  -fPIC  -std=c++11 -O3 -DNDEBUG  -shared -Wl,-soname,libtraj_gen_lb.so -o /home/radu/tiltUp3_ws/devel/.private/mav_ilqr_control/lib/libtraj_gen_lb.so CMakeFiles/traj_gen_lb.dir/src/traj_gen.cc.o 

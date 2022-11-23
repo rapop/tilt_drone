@@ -1,8 +1,0 @@
-prefix=/home/radu/tiltUp3_ws/install
-
-Name: minkindr_conversions
-Description: Description of minkindr_conversions
-Version: 0.0.0
-Cflags: -I/home/radu/tiltUp3_ws/install/include
-Libs: -L/home/radu/tiltUp3_ws/install/lib 
-Requires: eigen_conversions geometry_msgs gflags_catkin glog_catkin minkindr tf tf_conversions

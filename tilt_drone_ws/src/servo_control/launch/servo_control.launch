@@ -1,6 +1,0 @@
-<launch>
-
-	<node pkg="servo_control" type="servo_control_node" name="servo_control_node" output="screen" >
-	</node>
-
-</launch>
