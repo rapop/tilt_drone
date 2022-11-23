@@ -1,0 +1,14 @@
+\subsubsection usage Usage
+\verbatim
+<node name="Config" pkg="msf_updates" type="Config">
+  <param name="core_init_filter" type="bool" value="False" />
+  <param name="angle_noise_meas" type="double" value="0.01" />
+  <param name="distance_noise_meas" type="double" value="0.01" />
+  <param name="yaw_init" type="double" value="0.0" />
+  <param name="angle_delay" type="double" value="0.02" />
+  <param name="distance_delay" type="double" value="0.02" />
+  <param name="noise_p_ip" type="double" value="0.0" />
+  <param name="fixed_p_ip" type="bool" value="False" />
+</node>
+\endverbatim
+

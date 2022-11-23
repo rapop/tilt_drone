@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/radu/tiltUp3_ws/src/mav_ilqr_control/include/mav_ilqr_control/traj_gen.h
+iostream
+-
+vector
+-
+eigen3/Eigen/Eigen
+-
+cmath
+-
+ctime
+-
+time.h
+-
+
+/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/traj_gen.cc
+mav_ilqr_control/traj_gen.h
+-
+

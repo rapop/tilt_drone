@@ -1,0 +1,11 @@
+\subsubsection usage Usage
+\verbatim
+<node name="Config" pkg="msf_core" type="Config">
+  <param name="core_fixed_bias" type="bool" value="False" />
+  <param name="core_noise_acc" type="double" value="0.002" />
+  <param name="core_noise_accbias" type="double" value="5e-08" />
+  <param name="core_noise_gyr" type="double" value="0.0004" />
+  <param name="core_noise_gyrbias" type="double" value="3e-06" />
+</node>
+\endverbatim
+

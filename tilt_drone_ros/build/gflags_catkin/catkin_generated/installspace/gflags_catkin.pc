@@ -1,0 +1,8 @@
+prefix=/home/radu/tiltUp3_ws/install
+
+Name: gflags_catkin
+Description: Description of gflags_catkin
+Version: 2.2.1
+Cflags: -I/home/radu/tiltUp3_ws/install/include
+Libs: -L/home/radu/tiltUp3_ws/install/lib -lgflags
+Requires: 

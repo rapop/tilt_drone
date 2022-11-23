@@ -1,0 +1,8 @@
+prefix=/home/radu/tiltUp3_ws/install
+
+Name: rad_io
+Description: Description of rad_io
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/radu/tiltUp3_ws/install/lib 
+Requires: 

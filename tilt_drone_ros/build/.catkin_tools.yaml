@@ -1,0 +1,6 @@
+devel_space: /home/radu/tiltUp3_ws/devel
+install: false
+install_space: /home/radu/tiltUp3_ws/install
+profile: default
+source_space: /home/radu/tiltUp3_ws/src
+workspace: /home/radu/tiltUp3_ws

@@ -1,0 +1,1 @@
+/home/radu/tiltUp3_ws/devel/.private/servo_gimbal_control/lib/pkgconfig/servo_gimbal_control.pc

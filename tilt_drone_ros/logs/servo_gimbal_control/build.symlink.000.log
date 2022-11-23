@@ -1,0 +1,4 @@
+Symlinking /home/radu/tiltUp3_ws/devel/lib/servo_gimbal_control/servo_gimbal_control_node
+Symlinking /home/radu/tiltUp3_ws/devel/lib/pkgconfig/servo_gimbal_control.pc
+Symlinking /home/radu/tiltUp3_ws/devel/share/servo_gimbal_control/cmake/servo_gimbal_controlConfig.cmake
+Symlinking /home/radu/tiltUp3_ws/devel/share/servo_gimbal_control/cmake/servo_gimbal_controlConfig-version.cmake

@@ -1,0 +1,1 @@
+/home/radu/tiltUp3_ws/devel/.private/rad_io/lib/pkgconfig/rad_io.pc

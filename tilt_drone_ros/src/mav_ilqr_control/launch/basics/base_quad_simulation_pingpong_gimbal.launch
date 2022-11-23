@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="quad_name"/>
+  <arg name="world_name"/>
+  <arg name="paused"/>
+  <arg name="gui"/>
+  <arg name="use_ground_truth"/>
+  <arg name="use_mpc" default="false"/>
+  <arg name="enable_command_feedthrough" default="false"/>
+  <arg name="custom_models" default=""/>
+
+  <arg name="mav_name"/>
+  <arg name="model"/>
+  <arg name="enable_logging"/>
+  <arg name="enable_ground_truth"/>
+  <arg name="log_file"/>
+
+  <arg name="x_init"/>
+  <arg name="y_init"/>
+  <arg name="z_init"/>
+  <arg name="roll_init"/>
+  <arg name="pitch_init"/>
+  <arg name="yaw_init"/>
+
+  <arg name="debug"/>
+  <arg name="verbose"/>
+
+  <!-- Gazebo stuff to spawn the world !-->
+  <env name="GAZEBO_MODEL_PATH" 
+      value="${GAZEBO_MODEL_PATH}:$(find rotors_gazebo)/models:$(arg custom_models)"/>
+  <env name="GAZEBO_RESOURCE_PATH" 
+      value="${GAZEBO_RESOURCE_PATH}:$(find rotors_gazebo)/models"/>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(arg world_name)" />
+    <arg name="debug" value="$(arg debug)" />
+    <arg name="paused" value="$(arg paused)" />
+    <arg name="gui" value="$(arg gui)" />
+    <arg name="verbose" value="$(arg verbose)"/>
+  </include>
+
+  <!-- RotorS stuff to spawn the quadrotor !-->
+  <group ns="$(arg mav_name)">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav_pingpong_gimbal.launch">
+      <arg name="mav_name" value="$(arg mav_name)" />
+      <arg name="model" value="$(arg model)" />
+      <arg name="enable_logging" value="$(arg enable_logging)" />
+      <arg name="enable_ground_truth" value="$(arg enable_ground_truth)" />
+      <arg name="log_file" value="$(arg log_file)"/>
+      <arg name="x" value="$(arg x_init)" />
+      <arg name="y" value="$(arg y_init)" />
+      <arg name="z" value="$(arg z_init)" />
+      <arg name="roll" value="$(arg roll_init)" />
+      <arg name="pitch" value="$(arg pitch_init)" />
+      <arg name="yaw" value="$(arg yaw_init)" />
+    </include>
+  </group>
+
+  <!-- MPC stuff !-->
+  <group ns="$(arg quad_name)" >
+
+    <node name="mav_nonlinear_mpc" pkg="mav_nonlinear_mpc" type="nonlinear_mpc_node" respawn="true" clear_params="true" output="screen">
+      <remap from="odometry" to="ground_truth/odometry" />
+      <rosparam file="$(find mav_nonlinear_mpc)/resources/nonlinear_mpc_$(arg mav_name).yaml" />
+      <rosparam file="$(find mav_disturbance_observer)/resources/disturbance_observer_$(arg mav_name).yaml"/>
+      <param name="use_rc_teleop" value="false"/>
+      <param name="verbose" value="true" />
+      <param name="reference_frame" value="world"/>
+    </node>
+
+    <node name="PID_attitude_controller" pkg="mav_lowlevel_attitude_controller" type="mav_pid_attitude_controller_node" respawn="true" clear_params="true" output="screen">
+      <remap from="odometry" to="ground_truth/odometry" />
+      <rosparam file="$(find mav_lowlevel_attitude_controller)/resources/PID_attitude_$(arg mav_name).yaml" />
+    </node>
+  </group>
+
+  <!-- Gimbal control node !-->
+  <node pkg="gimbal_command" name="gimbal_command_node" type="gimbal_command.py" output="screen"> </node>
+  <include file="$(find gimbal_control)/launch/gimbal_control.launch"> </include>
+
+</launch>

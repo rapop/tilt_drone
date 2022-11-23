@@ -1,0 +1,1 @@
+/home/radu/tiltUp3_ws/devel/.private/servo_gimbal_control/share/servo_gimbal_control/cmake/servo_gimbal_controlConfig.cmake

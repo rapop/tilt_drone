@@ -1,0 +1,10 @@
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control.cc:[m[K In member function ‘[01m[Kvoid IterativeLinearQuadraticRegulator::generateRollout(const MatrixXd&, const MatrixXd&, Eigen::MatrixXd&, double&, const MatrixXd&)[m[K’:
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control.cc:101:3:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[KX[m[K’
+   X.row(t+1) = IterativeLinearQuadraticRegulator::stepDynamics(X.row(t), U.row(t));
+[01;32m[K   ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/mav_ilqr_control/src/ilqr_control.cc:101:83:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function
+   X.row(t+1) = IterativeLinearQuadraticRegulator::stepDynamics(X.row(t), U.row(t));
+[01;32m[K                                                                                   ^[m[K
+make[2]: *** [CMakeFiles/ilqr_control_lb.dir/src/ilqr_control.cc.o] Error 1
+make[1]: *** [CMakeFiles/ilqr_control_lb.dir/all] Error 2
+make: *** [all] Error 2

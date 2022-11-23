@@ -1,0 +1,7 @@
+[01m[K/home/radu/tiltUp3_ws/src/servo_gimbal_control/src/servo_gimbal_control_node.cc:[m[K In member function ‘[01m[Kvoid ServoGimbalControlNode::odoCallback(const ConstPtr&)[m[K’:
+[01m[K/home/radu/tiltUp3_ws/src/servo_gimbal_control/src/servo_gimbal_control_node.cc:56:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kodometry[m[K’ was not declared in this scope
+   double x = odometry->pose.pose.position.x;
+[01;32m[K              ^[m[K
+make[2]: *** [CMakeFiles/servo_gimbal_control_node.dir/src/servo_gimbal_control_node.cc.o] Error 1
+make[1]: *** [CMakeFiles/servo_gimbal_control_node.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,8 @@
+prefix=/home/radu/tiltUp3_ws/devel/.private/msf_core
+
+Name: msf_core
+Description: Description of msf_core
+Version: 1.0.1
+Cflags: -I/home/radu/tiltUp3_ws/devel/.private/msf_core/include -I/home/radu/tiltUp3_ws/src/ethzasl_msf/msf_core/include -I/usr/include/eigen3
+Libs: -L/home/radu/tiltUp3_ws/devel/.private/msf_core/lib -lmsf_core -lsimilaritytransform
+Requires: roscpp sensor_msgs nav_msgs dynamic_reconfigure msf_timing tf glog_catkin glog_catkin

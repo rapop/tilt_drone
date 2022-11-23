@@ -1,0 +1,8 @@
+\subsubsection usage Usage
+\verbatim
+<node name="Config" pkg="msf_distort" type="Config">
+  <param name="publish_pose" type="bool" value="True" />
+  <param name="publish_position" type="bool" value="True" />
+</node>
+\endverbatim
+

@@ -1,0 +1,1 @@
+/home/radu/tiltUp3_ws/devel/.private/gimbal_control/share/gimbal_control/cmake/gimbal_controlConfig-version.cmake

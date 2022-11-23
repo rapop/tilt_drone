@@ -1,0 +1,1 @@
+/home/radu/tiltUp3_ws/devel/.private/minkindr/share/minkindr/cmake/minkindrConfig.cmake

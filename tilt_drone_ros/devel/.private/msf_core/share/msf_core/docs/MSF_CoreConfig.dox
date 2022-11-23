@@ -1,0 +1,10 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~core_fixed_bias" : \b [bool] fix biases min: False, default: False, max: True
+- \b "~core_noise_acc" : \b [double] accelerations noise spectral density (nsd) [m/s^2/sqrt(Hz)] min: 0.0001, default: 0.002, max: 0.5
+- \b "~core_noise_accbias" : \b [double] acceleration biases random walk [m/s^3/sqrt(Hz)] min: 1e-08, default: 5e-08, max: 0.1
+- \b "~core_noise_gyr" : \b [double] gyros noise spectral density (nsd) [rad/s/sqrt(Hz)] min: 0.0001, default: 0.0004, max: 0.5
+- \b "~core_noise_gyrbias" : \b [double] gyro biases random walk [rad/s^2/sqrt(Hz)] min: 1e-07, default: 3e-06, max: 0.1
+

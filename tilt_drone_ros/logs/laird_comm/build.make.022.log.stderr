@@ -1,0 +1,11 @@
+[01m[K/home/radu/tiltUp3_ws/src/laird_comm/src/receiver_node.cc:[m[K In member function ‘[01m[Kvoid LairdCommunicationReceiverNode::readData()[m[K’:
+[01m[K/home/radu/tiltUp3_ws/src/laird_comm/src/receiver_node.cc:176:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kzf[m[K’ was not declared in this scope
+         zf<=zf_max_ && zf>=zf_min_ &&
+[01;32m[K         ^[m[K
+[01m[K/home/radu/tiltUp3_ws/src/laird_comm/src/receiver_node.cc:[m[K In constructor ‘[01m[KLairdCommunicationReceiverNode::LairdCommunicationReceiverNode(const ros::NodeHandle&)[m[K’:
+[01m[K/home/radu/tiltUp3_ws/src/laird_comm/src/receiver_node.cc:34:65:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kint system(const char*)[m[K’, declared with attribute warn_unused_result [-Wunused-result]
+   system("echo 'pop123123' | sudo -S stty -F /dev/ttyS4 115200");
+[01;32m[K                                                                 ^[m[K
+make[2]: *** [CMakeFiles/receiver_node.dir/src/receiver_node.cc.o] Error 1
+make[1]: *** [CMakeFiles/receiver_node.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="quad_name"/>
+  <arg name="world_name"/>
+  <arg name="paused"/>
+  <arg name="gui"/>
+  <arg name="use_ground_truth"/>
+  <arg name="use_mpc" default="false"/>
+  <arg name="enable_command_feedthrough" default="false"/>
+  <arg name="custom_models" default=""/>
+
+  <arg name="mav_name"/>
+  <arg name="model"/>
+  <arg name="enable_logging"/>
+  <arg name="enable_ground_truth"/>
+  <arg name="log_file"/>
+
+  <arg name="x_init"/>
+  <arg name="y_init"/>
+  <arg name="z_init"/>
+  <arg name="roll_init"/>
+  <arg name="pitch_init"/>
+  <arg name="yaw_init"/>
+
+  <arg name="debug"/>
+  <arg name="verbose"/>
+
+  <!-- Gazebo stuff to spawn the world !-->
+  <env name="GAZEBO_MODEL_PATH" 
+      value="${GAZEBO_MODEL_PATH}:$(find rotors_gazebo)/models:$(arg custom_models)"/>
+  <env name="GAZEBO_RESOURCE_PATH" 
+      value="${GAZEBO_RESOURCE_PATH}:$(find rotors_gazebo)/models"/>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(arg world_name)" />
+    <arg name="debug" value="$(arg debug)" />
+    <arg name="paused" value="$(arg paused)" />
+    <arg name="gui" value="$(arg gui)" />
+    <arg name="verbose" value="$(arg verbose)"/>
+  </include>
+
+  <!-- RotorS stuff to spawn the quadrotor !-->
+  <group ns="$(arg mav_name)">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav_pingpong_tilt.launch">
+      <arg name="mav_name" value="$(arg mav_name)" />
+      <arg name="model" value="$(arg model)" />
+      <arg name="enable_logging" value="$(arg enable_logging)" />
+      <arg name="enable_ground_truth" value="$(arg enable_ground_truth)" />
+      <arg name="log_file" value="$(arg log_file)"/>
+      <arg name="x" value="$(arg x_init)" />
+      <arg name="y" value="$(arg y_init)" />
+      <arg name="z" value="$(arg z_init)" />
+      <arg name="roll" value="$(arg roll_init)" />
+      <arg name="pitch" value="$(arg pitch_init)" />
+      <arg name="yaw" value="$(arg yaw_init)" />
+    </include>
+  </group>
+
+
+  <group ns="$(arg quad_name)" >
+
+  <!-- low level control node !-->
+    <node name="PID_attitude_controller" pkg="mav_lowlevel_attitude_controller" type="mav_pid_attitude_controller_node" respawn="true" clear_params="true" output="screen" >
+      <remap from="odometry" to="/msf_core/odometry" />
+      <rosparam file="$(find mav_lowlevel_attitude_controller)/resources/PID_attitude_$(arg mav_name).yaml" /> <!--Can add _softgains-->
+    </node>
+
+    <!--node name="odom_predictor" pkg="odom_predictor" type="odom_predictor_node" respawn="true" clear_params="true" output="screen">
+<remap from="odometry" to="ground_truth/odometry" /> 
+<remap from="imu_bias" to="imu" />           
+<rosparam file="$(find odom_predictor)/launch/bluebird.yaml" />
+    </node-->
+
+    <!-- iLQR control node !-->
+    <node pkg="mav_ilqr_control" name="mav_ilqr_control" type="ilqr_control_node" output="screen" > 
+      <remap from="ground_truth/odometry" to="/msf_core/odometry" />
+    </node>
+
+  </group>
+ 
+  <!-- MSF nodes !-->
+  <node name="msf_viconpos_sensor" pkg="msf_updates" type="pose_sensor" clear_params="true" output="screen" >
+		<remap from="msf_core/hl_state_input" to="/fcu/ekf_state_out" />
+		<remap from="msf_core/correction" to="/fcu/ekf_state_in" />
+		<remap from="msf_updates/transform_input" to="/vicon/robot_name/robot_name" />
+		<remap from="msf_core/imu_state_input" to="hummingbird/ground_truth/raw_imu"  />
+		<remap from="msf_updates/transform_input" to="hummingbird/ground_truth/transform" />
+		<rosparam file="$(find msf_updates)/viconpos_sensor_fix.yaml"/>
+  </node>
+  <node pkg="rosservice" type="rosservice" name="initialize" args="call --wait /msf_viconpos_sensor/pose_sensor/initialize_msf_scale 1"/>
+
+  <!-- Gimbal control node !-->
+  <node pkg="gimbal_command" name="gimbal_command_node" type="gimbal_command.py" output="screen"> </node>
+  <include file="$(find gimbal_control)/launch/gimbal_control.launch"> </include>
+
+</launch>
+
+
